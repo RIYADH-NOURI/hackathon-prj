@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 450px;
+    padding: 40px;
+    font-size: 0.9em;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+}
+
+form > h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+label {
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+button{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+button:active{
+    background: blue;
+}
+#list-url {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#list-url::-webkit-scrollbar {
+    width: 8px;
+}
+
+#list-url::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+#list-url li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#list-url li:last-child {
+    border-bottom: none;
+}
+
+#list-url li:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+#list-url li.selected {
+    background-color: #2c3e50;
+    color: white;
+}
+
+#result-url, #click-result {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: 500;
+    cursor: default;
+}

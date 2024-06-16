@@ -1,1 +1,1 @@
-# hackathon-prj
+# hackathon-project
